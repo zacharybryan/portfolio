@@ -1,9 +1,23 @@
 import React from 'react';
+import Container from 'react-bootstrap/esm/Container';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
-function Jumbo() {
+function Jumbo(props) {
 
     return(
-        <p>Jumbo</p>
+        <Jumbotron>
+            <Container>
+                <Row>
+                    <Col>
+                        { props.title && <h1>{props.title}</h1> }
+                        { props.subTitle && <h3>{props.subTitle}</h3> }
+                        { props.text && <h3>{props.text}</h3> }
+                    </Col>
+                </Row>
+            </Container>
+        </Jumbotron>
     )
 }
 
