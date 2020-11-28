@@ -9,6 +9,7 @@ import './App.css';
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
 import AboutPage from './pages/AboutPage.js';
+import ContactPage from './pages/ContactPage.js';
 
 class App extends React.Component {
 
@@ -57,6 +58,7 @@ class App extends React.Component {
 
           <Route path='/' exact render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />} />
           <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
+          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} text={this.state.contact.text} />} />
           <Footer>
 
           </Footer>
