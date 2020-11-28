@@ -34,7 +34,7 @@ class App extends React.Component {
         <Container className="p-0">
         
           <Navbar className="border-bottom">
-            <NavbarBrand>Zachary Bryan</NavbarBrand>
+            <Navbar.Brand>Zachary Bryan</Navbar.Brand>
           </Navbar>
 
         </Container>
