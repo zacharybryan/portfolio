@@ -30,7 +30,7 @@ class App extends React.Component {
       about: {
         title: 'About Me'
       },
-      contact: 'Lets Connect'
+      contact: 'Let\'s Connect'
     }
   }
   render() {
@@ -40,28 +40,21 @@ class App extends React.Component {
         
           <Navbar className="border-bottom" bg='transparent' expand='lg'>
             <Navbar.Brand>Zachary Bryan</Navbar.Brand>
-
-            <Navbar.Toggle className='border-0' aria-controls="navbar-toggle" />
-            
+            <Navbar.Toggle className='border-0' aria-controls="navbar-toggle" /> 
             <Navbar.Collapse id="navbar-toggle">
-
               <Nav className='ml-auto'>
                 <Link className='nav-link' to='/'>Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/contact'>Contact</Link>
               </Nav>
-
             </Navbar.Collapse>
-
-        
           </Navbar>
 
           <Route path='/' exact render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />} />
-          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
-          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} text={this.state.contact.text} />} />
-          <Footer>
-
-          </Footer>
+          <Route path='/about' render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
+          <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} text={this.state.contact.text} />} />
+          
+          <Footer />
 
         </Container>
       </Router>
