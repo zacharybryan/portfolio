@@ -14,7 +14,7 @@ function Footer() {
                         Zach Bryan
                     </Col>
                     <Col className='p-0 d-flex justify-content-end' md={3}>
-                        Copywrite (c) Zach Bryan
+                        (c) Zach Bryan
                     </Col>
                 </Row>
             </Container>
