@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-// import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import './App.css';
-// import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+
+// created components
+import Footer from './components/Footer.js'
 
 class App extends React.Component {
 
@@ -37,7 +38,7 @@ class App extends React.Component {
           <Navbar className="border-bottom" bg='transparent' expand='lg'>
             <Navbar.Brand>Zachary Bryan</Navbar.Brand>
 
-            <Navbar.Toggle aria-controls="navbar-toggle" />
+            <Navbar.Toggle className='border-0' aria-controls="navbar-toggle" />
             
             <Navbar.Collapse id="navbar-toggle">
 
@@ -51,6 +52,10 @@ class App extends React.Component {
 
         
           </Navbar>
+
+          <Footer>
+
+          </Footer>
 
         </Container>
       </Router>
