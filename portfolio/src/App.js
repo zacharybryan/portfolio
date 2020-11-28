@@ -8,6 +8,7 @@ import './App.css';
 // created components
 import Footer from './components/Footer.js';
 import HomePage from './pages/HomePage.js';
+import AboutPage from './pages/AboutPage.js';
 
 class App extends React.Component {
 
@@ -47,7 +48,6 @@ class App extends React.Component {
                 <Link className='nav-link' to='/'>Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/contact'>Contact</Link>
-                <Route path='/' exact render={() => <HomePage title={this.state.home.title} />} />
               </Nav>
 
             </Navbar.Collapse>
@@ -55,6 +55,8 @@ class App extends React.Component {
         
           </Navbar>
 
+          <Route path='/' exact render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />} />
+          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
           <Footer>
 
           </Footer>
