@@ -9,7 +9,7 @@ class ContactForm extends React.Component {
             name: '',
             email: '',
             message: '',
-            disabled: 'false',
+            disabled: false,
             emailSent: null
         }
     }
@@ -24,6 +24,15 @@ class ContactForm extends React.Component {
         this.setState({
             [name]: value
         })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+// Only alows one email 
+        this.setState({
+            disabled: true,
+            emailSent: true
+        });
     }
 
     render() {
@@ -49,8 +58,8 @@ class ContactForm extends React.Component {
                     SEND
                 </Button>
 
-                {this.state.emailSent == true && <p className='d-inline success-msg'>Email Sent</p>}
-                {this.state.emailSent == false && <p className='d-inline err-msg'>Email Unsuccessful</p>}
+                {this.state.emailSent === true && <p className='d-inline success-msg'>Email Sent</p>}
+                {this.state.emailSent === false && <p className='d-inline err-msg'>Email Unsuccessful</p>}
             </Form>
     )
 }
