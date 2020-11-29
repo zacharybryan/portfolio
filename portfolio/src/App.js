@@ -30,7 +30,9 @@ class App extends React.Component {
       about: {
         title: 'About Me'
       },
-      contact: 'Let\'s Connect'
+      contact: {
+        title: 'Let\'s Connect!'
+      }
     }
   }
 

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 function Jumbo(props) {
 
     return(
-        <Jumbotron className='bg-transparent jumbotron-fluid p-0'>
+        <Jumbotron className='bg-transparent jumbotron-fluid p-0 justify-content-center'>
             <Container fluid='true'>
                 <Row className='justify-content-center py-5'>
                     {/* typical sizes for screens */}

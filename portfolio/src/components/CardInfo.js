@@ -5,9 +5,9 @@ import { useSpring, animated } from 'react-spring';
 function CardInfo(props) {
     const style = useSpring({ opacity: 1, from: { opacity: 0 } });
     return (
-        <animated.div className='' style={style}>
-            <p className=''>{props.title}</p>
-            <p className=''>{props.subTitle}</p>
+        <animated.div className='z-card-info' style={style}>
+            <p className='z-card-title'>{props.title}</p>
+            <p className='z-card-sub-title'>{props.subTitle}</p>
             <a href={props.link} target='_blank' rel=''>View</a>
         </animated.div>
     )
