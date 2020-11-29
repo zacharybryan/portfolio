@@ -1,7 +1,5 @@
 import React from 'react';
 import CarouselProjects from '../components/CarouselProjects.js';
-
-import Carousel from '../components/CarouselProjects.js';
 import Jumbo from '../components/Jumbo.js'
 
 
