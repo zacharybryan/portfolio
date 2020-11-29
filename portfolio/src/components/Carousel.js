@@ -1,4 +1,8 @@
 import React from 'react';
+import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/Row'
+
+import Card from '../components/Card.js'
 import MealPlanner from '../assets/images/welcomepage.png';
 import Seeds from '../assets/images/seeds.png';
 import EmployeeSummary from '../assets/images/Employee-Summary.jpg';
@@ -96,7 +100,11 @@ class Carousel extends React.Component {
 
     render() {
         return(
-            <p>works</p>
+            <Container>
+                <Row className='justify-content-around'>
+                    {this.makeItem(this.state.items)}
+                </Row>
+            </Container>
         );
     }
 }
