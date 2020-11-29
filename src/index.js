@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import { Router } from 'react-router-dom';
 
-ReactDOM.render(
-    <App />,
+ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
+    <App /></Router>,
   document.getElementById('root')
 );
 
