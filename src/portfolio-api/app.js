@@ -26,7 +26,7 @@ app.get('/api', (req, res) => {
 app.post('/api/email', (req, res, next) => {
     console.log(req.body);
 
-    sendGrid.setApiKey('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')
+    sendGrid.setApiKey(SENDGRID_API_KEY);
 
     const msg = {
         to: 'zacharybryan@icloud.com',
