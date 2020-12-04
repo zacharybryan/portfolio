@@ -57,7 +57,8 @@ class App extends React.Component {
           {/* <Route exact path={'/'} component={HomePage} title={this.state.home.title} render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />}  /> */}
           {/* <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} title={this.state.home.title} render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />}  /> */}
           <Route exact path={'https://zacharybryan.github.io/portfolio/'} component={HomePage} title={this.state.home.title} render={() => <HomePage title={this.state.home.title} text={this.state.home.text} />}  />
-          <Route exact path={process.env.PUBLIC_URL + "/about"} render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
+          {/* <Route exact path={process.env.PUBLIC_URL + "/about"} render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} /> */}
+          <Route exact path={'https://zacharybryan.github.io/about'} render={() => <AboutPage title={this.state.about.title} text={this.state.about.text} />} />
           <Route exact path={process.env.PUBLIC_URL + "/contact"} render={() => <ContactPage title={this.state.contact.title} text={this.state.contact.text} />} />
           
           <Footer />
